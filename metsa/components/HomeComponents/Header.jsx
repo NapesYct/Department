@@ -25,11 +25,11 @@ const Header = () => {
         <StyledToolbar>
           <Link href='/'><Image src="/images/metsa.png" width={150} height={70} alt="" /></Link>
           <Stack direction={"row"} spacing={3}  >
-            <Link underline='none' href="/" className='navLink hover:border-b-2 hover:border-red-600' >Home</Link>
-            <Link underline='none' href="/lecturers" className='navLink hover:border-b-2 hover:border-red-600'>Lecturers</Link>
-            <Link underline='none' href="/executives" className='navLink hover:border-b-2 hover:border-red-600'>Executives</Link>
-            <Link underline='none' href="/department" className='navLink hover:border-b-2 hover:border-red-600'>Department</Link>
-            <Link underline='none' href="/contact" className='navLink hover:border-b-2 hover:border-red-600'>Contact</Link>
+            <Link underline='none' href="/" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600' >Home</Link>
+            <Link underline='none' href="/lecturers" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Lecturers</Link>
+            <Link underline='none' href="/executives" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Executives</Link>
+            <Link underline='none' href="/department" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Department</Link>
+            <Link underline='none' href="/contact" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Contact</Link>
           </Stack>
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 2, }}>
