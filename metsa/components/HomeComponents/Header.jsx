@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import AppBar from '@mui/material/AppBar'
+// import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import { styled } from '@mui/material/styles'
 import Image from 'next/image'
 import Stack from '@mui/material/Stack'
-import { Avatar, Box, Button, Link, Paper } from '@mui/material'
+import { AppBar, Avatar, Box, Button, Link, Paper } from '@mui/material'
 import Appbar from '../Appbar';
 import TemporaryDrawer from '../Drawer';
 
@@ -15,13 +15,23 @@ const StyledToolbar = styled(Toolbar)({
   justifyContent: "space-between",
   alignItems: "center",
 
-})
+});
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <AppBar className='hidden md:block' position="sticky" sx={{ backgroundColor: "#ddd", padding: "0 1rem" }}>
+      <AppBar position="sticky" sx={{
+        backgroundColor: "#ddd",
+        padding: "0 1rem",
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'block',
+
+        }
+      }}>
         <StyledToolbar>
           <Link href='/'><Image src="/images/metsa.png" width={150} height={70} alt="" /></Link>
           <Stack direction={"row"} spacing={10} >
