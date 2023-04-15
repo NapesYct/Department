@@ -47,12 +47,12 @@ const Footer = () => {
 
         <div>
           <Typography variant="h5" color="#fff">About Our Department</Typography>
-          <Typography width={"70%"} variant="subtitle1" color="#fff">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sequi recusandae sunt cum aspernatur ea beatae deserunt impedit blanditiis quibusdam.</Typography>
+          <Typography width={"70%"} variant="subtitle1" color="#fff">Mechatronics Engineering Department is an interdisciplinary field that combines the principles of mechanical, electrical, and computer engineering to design and develop advanced systems and devices.</Typography>
         </div>
       </div>
-      <div className=' flex px-10 py-2 justify-between items-center bg-red-900'>
-        <p className='text-white'> &#169;2022 Copyright Mechatronics Engineering Department</p>
-        <p className='text-white'>Developed By Faleye Caleb</p>
+      <div className='flex flex-col md:flex-row md:px-10 justify-center md:justify-between md:items-center bg-red-900'>
+        <p className='text-white text-center py-3'> &#169;2023 - Mechatronics Engineering Department</p>
+        <p className='text-white text-center bg-red-500 animate-pulse'>Developed By Faleye Caleb</p>
       </div>
     </div>
   )

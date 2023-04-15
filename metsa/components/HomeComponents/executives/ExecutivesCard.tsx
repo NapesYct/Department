@@ -20,7 +20,15 @@ const ExecutivesCard = ({ name, title, mainImage }: Props) => {
           height="480"
           image={mainImage}
           alt="green iguana"
-          className='rounded-full h-40 w-40 mx-auto mt-5'
+
+          sx={{
+            borderRadius: '9999px',
+            height: '10rem',
+            width: '10rem',
+            marginTop: '1.25rem',
+            marginLeft: 'auto',
+            marginRight: 'auto'
+          }}
         />
         <CardContent>
           <Typography className='text-center' variant="body2" color="text.secondary">

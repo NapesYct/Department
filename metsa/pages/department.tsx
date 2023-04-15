@@ -42,14 +42,14 @@ const department = () => {
         </div>
 
         <Box className='grid grid-cols-1 md:grid-cols-3 mb-20'>
-          <OurVision bgColor='bg-gray-800' title='Our Vision' description='Nobis ratione, amet culpa ipsa esse itaque molestias, explicabo dicta ex totam similique sapiente dolorum vitae?' />
-          <OurVision bgColor='bg-red-500' title='Our Mission' description='Nobis ratione, amet culpa ipsa esse itaque molestias, explicabo dicta ex totam similique sapiente dolorum vitae?' />
-          <OurVision bgColor='bg-gray-800' title='Our Motto' description='Nobis ratione, amet culpa ipsa esse itaque molestias, explicabo dicta ex totam similique sapiente dolorum vitae?' />
+          <OurVision bgColor='bg-gray-800' title='Our Vision' description='The vision of the Mechatronics Engineering Department is to become a world-renowned center of excellence in mechatronics education, research, and innovation.' />
+          <OurVision bgColor='bg-red-500' title='Our Mission' description='The mission of the Mechatronics Engineering Department is to provide students with a comprehensive education in the principles and applications of mechatronics engineering.' />
+          <OurVision bgColor='bg-gray-800' title='Our Motto' description='The motto of the Mechatronics Engineering Department is "Innovate, Create, and Transform."' />
         </Box>
         <Box className="md:px-10">
           <Box className='mb-8'>
             <Typography className='text-2xl mb-2 md:text-4xl font-bold' variant="h4" textAlign={"center"} color="initial">About Our Department</Typography>
-            <Typography className='text-sm md:text-lg' textAlign={"center"} variant="subtitle1" color="initial">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, quam iste? Exercitationem, quasi inventore explicabo cum in ducimus repellat optio.</Typography>
+
           </Box>
 
           <Box className='grid grid-cols-1 md:grid-cols-2 mb-16'>
@@ -58,14 +58,11 @@ const department = () => {
               <Typography variant="h4" className='text-2xl text-center md:text-start md:text-5xl' gutterBottom color="#fff">
                 Our Department
               </Typography>
-              <Typography variant="body2" color="#fff">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, officia fugiat numquam culpa reiciendis repellendus doloribus ducimus.
-                Sed sapiente harum est accusantium repudiandae dolorum consequuntur ad, voluptatum quos similique! Modi veniam pariatur laudantium aut! Nobis ratione, amet culpa ipsa esse itaque molestias, explicabo dicta
+              <Typography sx={{ lineHeight: '25px' }} variant="body1" color="#fff">
+                Mechatronics Engineering Department is an interdisciplinary field that combines the principles of mechanical, electrical, and computer engineering to design and develop advanced systems and devices. By studying in this department, students are equipped with a diverse skill set that enables them to solve complex problems and create innovative solutions that bridge the gap between mechanical and electronic systems.
               </Typography>
-              <Typography variant="body2" color="#fff">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              <Typography sx={{ lineHeight: '25px' }} variant="body1" color="#fff">
+                One good thing about our department is that it offers a holistic approach to engineering education, giving students a broad understanding of different fields, which opens up various career opportunities. Graduates of Mechatronics Engineering Department can work in fields such as robotics, automation, automotive industry, aerospace, manufacturing, and many others, making it a highly sought-after degree in today's market.
               </Typography>
 
             </Box>

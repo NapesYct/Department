@@ -14,21 +14,21 @@ const Lecturers: React.FC<Props> = ({ lecturersInfo }) => {
 
   return (
     <Box className='mb-16 '>
-      <WhatWeOffer title={'What We Offer'} subtitle={'Join us to know all the courses in this wonderfull department so that you can have a wonderful and beautiful user experience Join us to know all the courses in this wonderfull department so that you can have a wonderful and beautiful user experience'} />
+      <WhatWeOffer title={'What We Offer'} subtitle={'Join us to know all the courses in this wonderfull department so that you can have a wonderful and beautiful user experience'} />
       <Box className='md:px-10 flex justify-between items-center' sx={{ margin: "1rem 0" }}>
         <Box>
-          <Typography className="text-center md:text-start" variant="h5" color="initial">Meet Your Departmental Lecturers</Typography>
-          <Typography className="text-center md:text-start" variant="subtitle1" color="initial">Discove all the lecturers in the department of mechatronics engineering</Typography>
+          <Typography sx={{ textAlign: { xs: 'center', md: 'start' }, padding: '0px 5px' }} variant="h5" color="initial">Meet Your Departmental Lecturers</Typography>
+          <Typography className="text-center md:text-start" sx={{ display: { xs: 'none', md: 'block' } }} variant="subtitle1" color="initial">Discove all the lecturers in the department of mechatronics engineering</Typography>
         </Box>
         <Link href="/lecturers"><Typography className='hidden md:block transition duration-200 delay-75 ease-in-out hover:underline hover:text-red-500' variant="subtitle2" color="initial">See All &gt;&gt;&gt;</Typography></Link>
       </Box>
       <Box className='relative'>
-        <Box className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-4 md:px-10' sx={{
+        <Box className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:px-10' sx={{
           backgroundImage: "url('/images/dark.jpg')",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          padding: "1.5rem",
+          padding: ".5rem",
           backgroundAttachment: "fixed"
 
         }}>

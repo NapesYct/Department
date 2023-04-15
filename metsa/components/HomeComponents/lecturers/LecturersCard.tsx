@@ -12,7 +12,7 @@ import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import Link from 'next/link';
 
@@ -27,7 +27,9 @@ interface Props {
 
 const LecturersCard: React.FC<Props> = ({ title, subtitle, description, mainImage, slug }) => {
   return (
-    <Card className="w-full h-full">
+    <Card className="w-full" sx={{
+      height: '480px',
+    }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -58,9 +60,12 @@ const LecturersCard: React.FC<Props> = ({ title, subtitle, description, mainImag
         justifyContent: "center"
       }}>
         <Link href={`/lecturers/${slug}`}>
-          <Button startIcon={<PersonIcon />} className="bg-black bottom-0 text-white items-center flex hover:bg-red-500">
-            View Pofile
-          </Button>
+          <Box className="bg-black bottom-0 text-white items-center flex rounded hover:bg-red-500">
+            <Button sx={{ color: 'white', bottom: 0 }} startIcon={<PersonIcon />}>
+              View Pofile
+            </Button>
+          </Box>
+
         </Link>
       </CardActions>
     </Card>

@@ -12,7 +12,7 @@ const HeroBackground = styled(Box)({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  // marginBottom: "3rem"
+  // marginBottom: "3rem",
 })
 
 
@@ -22,7 +22,11 @@ const HeroSection = () => {
   return (
     <div>
       <HeroBackground className='mb-16'>
-        <Box className='flex flex-col items-center  justify-center md:ml-12 bg-red-600 sm:bg-inherit gap-2' width={"50%"} sx={{
+        <Box sx={{
+          width: {
+            sx: '100%',
+            md: '50%'
+          },
           height: "550px",
           display: 'flex',
           flexDirection: 'column',
@@ -35,27 +39,37 @@ const HeroSection = () => {
           marginLeft: {
             md: 12
           },
-          backgroundColor: 'rgba(225, 0, 50, 0.5)'
+          backgroundColor: {
+            xs: 'rgba(225, 0, 50, 0.8)',
+            md: 'transparent'
+          },
+          paddingLeft: {
+            xs: '2rem',
+            md: '0'
+          }
         }}>
-          <Typography variant="h3" color="white" sx={{
+          <Typography variant="h1" color="white" sx={{
             textAlign: {
-              xs: 'center',
+              xs: 'start',
               md: 'start'
             },
             fontSize: {
-              xs: '1.25rem',
-              md: '3rem'
+              xs: '2.25rem',
+              md: '3.5rem'
             },
+            marginBottom: {
+              xs: '1.5rem'
+            }
 
           }}>Welcome To Mechatronics Engineering Department YabaTech Chapter</Typography>
-          <Typography className="text-center text-sm md:text-lg md:text-start" variant="subtitle1" color="white"
+          {/* <Typography className="text-center text-sm md:text-lg md:text-start" variant="subtitle1" color="white"
             sx={{
               textAlign: {
                 xs: 'center',
                 md: ''
               }
             }}
-          >Welcome To Mechatronics Department YabaTech Chapter</Typography>
+          >Welcome To Mechatronics Department YabaTech Chapter</Typography> */}
 
           <Link href="/department"><Button className='bg-white text-black hover:bg-black hover:text-white md:bg-red-500' variant='contained' color='warning'>Let's Explore</Button></Link>
 

@@ -17,13 +17,24 @@ const StyledToolbar = styled(Toolbar)({
 
 });
 
+const linkStyle = {
+  color: 'black',
+  transition: 'all',
+  transitionDuration: '200ms',
+  transitionTimingFunction: 'ease-in-out',
+  ":hover": {
+    borderBottomWidth: '2px',
+    borderBottomColor: 'red'
+  }
+}
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <AppBar style={{ backgroundColor: 'orange', color: '' }} position="sticky" sx={{
+      <AppBar style={{ backgroundColor: 'white', position: 'sticky' }} position="sticky" sx={{
         backgroundColor: "#ddd",
+        position: 'sticky',
         padding: "0 1rem",
         display: {
           xs: 'none',
@@ -35,16 +46,20 @@ const Header = () => {
         <StyledToolbar>
           <Link href='/'><Image src="/images/metsa.png" width={150} height={70} alt="" /></Link>
           <Stack direction={"row"} spacing={10} >
-            <Link underline='none' href="/" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600' >Home</Link>
-            <Link underline='none' href="/lecturers" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Lecturers</Link>
-            <Link underline='none' href="/executives" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Executives</Link>
-            <Link underline='none' href="/department" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Department</Link>
-            <Link underline='none' href="/contact" className='transition-all text-gray-600 duration-200 ease-in-out rounded-sm hover:border-b-2 hover:border-red-600'>Contact</Link>
+            <Link sx={linkStyle} underline='none' href="/"  >Home</Link>
+            <Link sx={linkStyle} underline='none' href="/lecturers" >Lecturers</Link>
+            <Link sx={linkStyle} underline='none' href="/executives">Executives</Link>
+            <Link sx={linkStyle} underline='none' href="/department">Department</Link>
+            <Link sx={linkStyle} underline='none' href="/contact">Contact</Link>
           </Stack>
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 2, }}>
 
-            <Link href="/department"><Button className='bg-gray-700 hover:bg-gray-900' variant="contained" size='small'>Let's Go In</Button></Link>
+            <Link href="/department">
+              <Box className='bg-gray-700 hover:bg-red-900'>
+                <Button variant="contained" sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' } }} size='small'>Let's Go In</Button>
+              </Box>
+            </Link>
 
           </Box>
 
