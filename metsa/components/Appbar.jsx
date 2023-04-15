@@ -26,15 +26,14 @@ export default function MenuAppBar({ isOpened }) {
 
   return (
     <Box className="md:hidden" sx={{ flexGrow: 1 }}>
-      <AppBar className="bg-white" position="sticky">
+      <AppBar sx={{ backgroundColor: 'white', position: 'sticky', top: 0 }}>
         <Toolbar className='flex justify-between items-center '>
           <IconButton
             size="large"
             edge="start"
-            color="default"
             aria-label="menu"
             onClick={openDrawer}
-            sx={{ mr: 2 }}
+            sx={{ mr: 2, color: 'red' }}
           >
             <MenuIcon />
           </IconButton>
@@ -48,6 +47,7 @@ export default function MenuAppBar({ isOpened }) {
                 aria-haspopup="true"
                 onClick={handleMenu}
                 color="default"
+                sx={{ color: "red" }}
               >
                 <AccountCircle />
               </IconButton>

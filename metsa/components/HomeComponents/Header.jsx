@@ -22,7 +22,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <AppBar position="sticky" sx={{
+      <AppBar style={{ backgroundColor: 'orange', color: '' }} position="sticky" sx={{
         backgroundColor: "#ddd",
         padding: "0 1rem",
         display: {
